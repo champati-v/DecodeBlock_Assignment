@@ -1,5 +1,5 @@
 import React from 'react'
-import buttonBg from '../../assets/ButtonBg.png'
+import buttonBg from '../../assets/buttonBg.png'
 import buttonBgHover from '../../assets/buttonBgHover.png'
 
 const Button = ({title, className}) => {
