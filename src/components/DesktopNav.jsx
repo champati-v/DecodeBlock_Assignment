@@ -8,6 +8,7 @@ const menuVariants = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
 };
 
+
 const DesktopNav = () => {
   return (
     <div className="flex items-center font-customFont1">
