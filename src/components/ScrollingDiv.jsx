@@ -1,6 +1,6 @@
 import React from 'react'
 import {motion} from 'framer-motion'
-import {images} from '../constants/index'
+import {images1} from '../constants/index'
 
 const ScrollingDiv = () => {
   return (
@@ -14,8 +14,8 @@ const ScrollingDiv = () => {
         ease: "linear",
       }}
     >
-      {[...images, ...images].map((img, index) => (
-        <img key={index} src={img} alt={`img-${index}`} className="w-[500px] h-auto object-cover" />
+      {[...images1, ...images1].map((img, index) => (
+        <img key={index} src={img} alt={`img-${index}`} className="w-[500px] lg:w-[600px] h-auto object-cover" />
       ))}
     </motion.div>
   </div>

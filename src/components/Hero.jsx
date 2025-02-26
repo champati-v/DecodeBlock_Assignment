@@ -1,21 +1,21 @@
 import React from "react";
 import Header from "./Header";
 import { mobileMenuItems } from "../constants";
-import Button from "./Button";
+import Button from "./ui/Button";
 import India from "../assets/India.svg";
-import bg from '/bg.png'
 import singular from '../assets/singularity.png'
 import ScrollingDiv from "./ScrollingDiv";
-
+import scroll5 from '../assets/scroll5.png'
+import Footer from "./Footer";
+import VideoPlayer from "./VideoPlayer";
 
 const Hero = () => {
   return (
-    <div className="h-screen w-full bg-cover bg-center bg-no-repeat" 
-         style={{backgroundImage: `url(${bg})`}}>
+    <div className="min-h-screen w-full bg-cover bg-center bg-no-repeat bg-gradient-to-br from-[#100f13] via-[#150f19] to-[#352436]">
       <Header />
 
       {/* desktop  */}
-      <div className="mt-5 hidden lg:flex justify-center items-center gap-5">
+      <div className="mt-[90px] hidden lg:flex justify-center items-center gap-5">
         {/* Logo on the left */}
         <div className="flex items-center gap-1">
           <img src={India} alt="India Logo" />
@@ -29,7 +29,7 @@ const Hero = () => {
               <Button
                 key={id}
                 title={item.title}
-                className="text-[11px] w-[150px] h-[50px]"
+                className="text-[12px] w-[170px] h-[50px]"
               />
             ))}
           </div>
@@ -37,17 +37,17 @@ const Hero = () => {
       </div>
 
        {/* mobile */}
-       <div className="lg:hidden mt-10 flex items-center justify-center">
+       <div className="lg:hidden mt-28 flex items-center justify-center">
         <div className="flex items-center gap-1 ml-4">
             <img src={India} alt="India Logo" />
             <h1 className="uppercase text-white text-2xl">HackIndia</h1>
         </div>
       </div>
       
-      {/* hero section  */}
-      <div className="mt-5 mb-3 lg:mt-5 w-7xl flex flex-col items-center justify-center gap-5">
+      {/* content  */}
+      <div className="mt-5 mb-10 lg:mt-5 w-7xl flex flex-col items-center justify-center gap-5">
             <img src={singular} alt="" />
-            <h1 className="mt-2 text-5xl lg:text-8xl font-semibold text-white"><span className="bg-orange-500 p-1 rounded-sm">Ha</span>ckIndia2025</h1>
+            <h1 className="text-5xl lg:text-7xl font-semibold text-white"><span className="bg-orange-500 p-1 rounded-sm">Ha</span>ckIndia2025</h1>
             <p className="text-lg lg:text-2xl text-white font-semibold tracking-wider">India's Biggest Web3 & AI Hackathon</p>
 
             <button className="bg-gradient-to-tr from-[#6A1799] to-[#230833] hover:bg-gradient-to-tl transition-all duration-300 px-4 py-2 text-white rounded-md border border-purple-900">February 28 - September 28</button>
@@ -62,11 +62,22 @@ const Hero = () => {
 
            <Button title={'Register Now'} className={'w-[180px] h-[60px]'} />
       </div>
-
+      
+      {/* scrolling icons  */}
       <ScrollingDiv/>
 
+      {/* video section  */}
+      <VideoPlayer/>
 
-     
+      {/* icons */}
+      <div className="px-1 flex items-center justify-center bg-white">
+        <img src={scroll5} alt="" />
+      </div>
+
+      {/* footer  */}
+      <div className="pt-8 lg:pt-16 pb-5">
+        <Footer/>
+      </div>
 
     </div>
   );
