@@ -10,6 +10,14 @@ Welcome to **HackIndia 2025**! Frontend Hiring Assignment for DecodeBlock. 🏎�
 - ***Tailwind CSS***
 - ***Framer Motion***
 
+---
+
+## Custom Fonts used (Taken from figma design)
+- ***Proxon***
+- ***VTF Justina GEO***
+
+---
+
 ## 🛠️ Getting Started  
 
 Follow these instructions to set up the project on your local machine.
