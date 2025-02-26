@@ -9,7 +9,7 @@ const Preloader = ({ setLoading }) => {
   useEffect(() => {
     setTimeout(() => {
       setVisible(false);
-      setTimeout(() => setLoading(false), 500);
+      setTimeout(() => setLoading(false), 3000);
     }, 3000);
   }, [setLoading]);
 
