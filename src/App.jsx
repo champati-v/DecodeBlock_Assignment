@@ -1,9 +1,13 @@
 import Hero from './components/Hero'
-import './index.css'
+import ParticlesComponent from './components/Particle'
+import './App.css'
+
+
 function App() {
   return (
     <>
-    <Hero/>
+    <ParticlesComponent id="particles" />
+      <Hero/>
     </>
   )
 }

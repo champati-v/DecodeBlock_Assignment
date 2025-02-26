@@ -1,3 +1,15 @@
+import scroll1 from '../assets/scroll1.png'
+import scroll2 from '../assets/scroll2.png'
+import scroll3 from '../assets/scroll3.png'
+import scroll4 from '../assets/scroll4.png'
+
+export const images = [
+    scroll1,
+    scroll2,
+    scroll3,
+    scroll4
+]
+
 export const mobileMenuItems = [
     {
         id: 1,
@@ -28,3 +40,4 @@ export const mobileMenuItems = [
         title: "Resources"
     },
 ]
+

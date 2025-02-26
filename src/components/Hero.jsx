@@ -5,6 +5,7 @@ import Button from "./Button";
 import India from "../assets/India.svg";
 import bg from '/bg.png'
 import singular from '../assets/singularity.png'
+import ScrollingDiv from "./ScrollingDiv";
 
 
 const Hero = () => {
@@ -44,7 +45,7 @@ const Hero = () => {
       </div>
       
       {/* hero section  */}
-      <div className="mt-5 lg:mt-5 w-7xl flex flex-col items-center justify-center gap-5">
+      <div className="mt-5 mb-3 lg:mt-5 w-7xl flex flex-col items-center justify-center gap-5">
             <img src={singular} alt="" />
             <h1 className="mt-2 text-5xl lg:text-8xl font-semibold text-white"><span className="bg-orange-500 p-1 rounded-sm">Ha</span>ckIndia2025</h1>
             <p className="text-lg lg:text-2xl text-white font-semibold tracking-wider">India's Biggest Web3 & AI Hackathon</p>
@@ -61,6 +62,8 @@ const Hero = () => {
 
            <Button title={'Register Now'} className={'w-[180px] h-[60px]'} />
       </div>
+
+      <ScrollingDiv/>
 
 
      
