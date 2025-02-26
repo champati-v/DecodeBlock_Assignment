@@ -1,9 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Oxanium:wght@200..800&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 html, body{
-    font-family: 'Oxanium';
+    /* font-family: 'CustomFont1'; */
     scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: 'CustomFont1';
+    src: url('/PROXON.ttf') format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CustomFont2';
+    src: url('/VTFJustinaGEO-Regular.otf') format(truetype);
+    font-weight: normal;
+    font-style: normal;
 }
