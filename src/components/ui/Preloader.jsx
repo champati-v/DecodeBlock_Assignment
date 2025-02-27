@@ -20,7 +20,6 @@ const Preloader = ({ setLoading }) => {
       className="fixed top-0 left-0 w-full h-full bg-black flex flex-col items-center justify-center z-50"
       exit={{ opacity: 0, transition: { duration: 0.5 } }}
     >
-      {/* Column: Logo and "Presents" */}
       <motion.div className="flex flex-col items-center justify-center">
         <motion.img
           src={logo}
@@ -40,7 +39,6 @@ const Preloader = ({ setLoading }) => {
         </motion.h1>
       </motion.div>
 
-      {/* Row: India Logo, HackIndia, and 2025 */}
       <motion.div className="flex items-center mt-4">
         <motion.img
           src={India}
